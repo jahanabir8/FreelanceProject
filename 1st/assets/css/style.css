@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{font-family: 'Montserrat', sans-serif;}
+
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+
+ul{padding: 0; margin: 0;}
+
+li{list-style: none;}
+
+.container{
+    width: 100%;
+    max-width: 1148px;
+}
+
+.button{
+    padding: 17px 22px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 3px solid #59AC7A;
+    outline: none;
+    background: #59AC7A;
+    border-color: #59AC7A;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+    background: transparent !important;
+    color: #59AC7A !important;
+    border: 3px solid #59AC7A !important;
+}
+
+.hero__section{
+    background-image: url(../image/bg/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =====nav bar css start here===== */
+.nav__inner{
+    padding: 3px 0 8px;
+    border-bottom: 1px solid #fff;
+}
+
+.nav__menu ul{
+    gap: 34px;
+}
+
+.nav__menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav__btn button:last-child{
+    background: #fff;
+    color: #59AC7A;
+    border: 3px solid #fff;
+}
+
+.nav__btn{
+    gap: 14px;
+}
+
+.mobile__menu{
+    padding: 30px;
+    /* background: #00000061; */
+    background: red;
+    width: 50%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu__open{
+    transform: translateX(0);
+}
+
+.menu__bar img{
+    cursor: pointer;
+}
+
+.mobile__menu .topper{
+    margin-bottom: 40px;
+}
+
+.mobile__menu .topper img{
+    width: 100px;
+}
+
+.mobile__menu .topper span svg{
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;
+}
+
+.mobile__menu ul li a{
+    padding: 20px 0;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+/* =====nav bar css start here===== */
