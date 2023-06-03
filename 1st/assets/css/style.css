@@ -78,7 +78,7 @@ button:last-child{
 .mobile__menu{
     padding: 30px;
     /* background: #00000061; */
-    background: tomato;
+    background: #000;
     width: 50%;
     height: 100vh;
     overflow-y: scroll;
@@ -124,8 +124,14 @@ button:last-child{
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile__menu{
+        width: 100%;
+    }
 }
 /* =====nav bar css end here===== */
 
@@ -160,6 +166,10 @@ button:last-child{
     margin-left: auto;
 }
 
+.banner__form .card{
+    border: none;
+}
+
 .banner__form .form__title span{
     font-size: 14px;
     font-weight: 500;
@@ -189,19 +199,23 @@ div#nav-tab{
     width: 50%;
     /* border: 2px solid transparent; */
     font-size: 18px;
-    color: #59AC7A;
+    /* color: #59AC7A; */
+    font-weight: 600;
     border-top-right-radius: unset;
     border-top-left-radius: unset;
     border-radius: 5px !important;
+    color: #303030 !important;
 }
 
-.nav-link.active{
+#nav-tab .nav-link.active{
     border: 3px solid #59AC7A !important;
+    background: #d3d3d336;
+    color: #59AC7A !important;
 }
 
 .tab-content{
     border: unset !important;
-    background: transparent;
+    background: #fff !important;
 }
 
 .tab-content h5{
@@ -291,6 +305,10 @@ div#nav-tab{
         margin: auto;
         margin-bottom: -10px;
     }
+
+    .banner__inner{
+        padding-top: 75px;
+    }
 }
 /* =====banner section css end here===== */
 
@@ -374,7 +392,7 @@ div#nav-tab{
     margin-bottom: 45px;
 }
 
-.contact__top input{
+.contact__form input{
     height: 48px;
 }
 
@@ -598,3 +616,78 @@ div#nav-tab{
     }
 }
 /* =====footer section css start here===== */
+
+
+
+
+/* ==================================================== 
+        Sign in page css start here
+==================================================== */
+.hero__section.signIn__hero{
+    background-image: url(../image/bg/signin.png);
+}
+
+.signin__inner{
+    padding: 151px 0;
+}
+
+.signin__form{
+    height: 518px;
+    width: 100%;
+    max-width: 515px;
+    margin: auto;
+    /* position: relative; */
+}
+
+.signin__form .contact__form{
+    height: 100%;
+    position: relative;
+}
+
+.signin__form .contact__form h3{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.signin__form .contact__form p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 32px 0 31px;
+}
+
+.signin__form .inner__label{
+    margin-bottom: 35px;
+}
+
+.signin__form .contact__form a{
+    color: #59AC7A;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.signin__form .contact__form .button{
+    position: absolute;
+    /* width: 100%;
+    max-width: 451px; */
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+}
+
+@media screen and (max-width: 575px) {
+    .signin__inner{
+        padding: 111px 0;
+    }
+
+    .signin__form .contact__form h3{
+        font-size: 28px;
+    }
+}
+
+/* ==================================================== 
+        Sign in page css end here
+==================================================== */
