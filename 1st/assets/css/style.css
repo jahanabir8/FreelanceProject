@@ -60,7 +60,7 @@ li{list-style: none;}
     font-size: 16px;
 }
 
-.nav__btn button:last-child{
+button:last-child{
     background: #fff;
     color: #59AC7A;
     border: 3px solid #fff;
@@ -73,9 +73,10 @@ li{list-style: none;}
 .mobile__menu{
     padding: 30px;
     /* background: #00000061; */
-    background: red;
+    background: tomato;
     width: 50%;
     height: 100vh;
+    overflow-y: scroll;
     transform: translateX(-100%);
     transition: 0.3s ease-in-out;
 
@@ -106,8 +107,12 @@ li{list-style: none;}
     color: #fff;
 }
 
+.mobile__menu ul{
+    margin-bottom: 30px;
+}
+
 .mobile__menu ul li a{
-    padding: 20px 0;
+    padding: 18px 0;
     width: 100%;
     display: block;
     text-decoration: none;
@@ -116,4 +121,93 @@ li{list-style: none;}
     color: #fff;
     border-bottom: 1px solid #fff;
 }
-/* =====nav bar css start here===== */
+/* =====nav bar css end here===== */
+
+
+/* =====banner section css start here===== */
+.banner__content{
+    width: 100%;
+    /* max-width: 567px; */
+}
+
+.banner__content h1{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.banner__content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.banner__form{
+    background: #fff;
+}
+
+.banner__form .form__title span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #858585;
+    margin: 15px 0;
+}
+
+.banner__form .form__title img{
+    height: 90px;
+    /* width: 131px; */
+}
+/* =====banner section css end here===== */
+
+
+/* =====contact section css start here===== */
+.contact__section{
+    background: #fff;
+    background-image: url(../image/bg/contact.png);
+    padding: 141px 0 105px;
+}
+
+.office__title h2{
+    font-size: 64px;
+    line-height: 94px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.office__info h5{
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.office__title p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #303030;
+    margin-top: 33px;
+    margin-bottom: 46px;
+    
+    width: 100%;
+    max-width: 515px;
+}
+
+.office__info .info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+    width: 100%;
+    max-width: 394px;
+    margin-bottom: 19px;
+}
+
+.office__info .info a{
+    text-decoration: none;
+    color: #303030;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+/* =====contact section css end here===== */
