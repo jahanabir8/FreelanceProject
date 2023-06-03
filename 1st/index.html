@@ -26,7 +26,7 @@
         <nav class="nav__bar">
             <div class="container">
                 <div class="nav__inner d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
+                    <div class="nav__left d-flex align-items-center">
                         <div class="logo">
                             <a href="#"><img src="assets/image/logo/log.png" alt="logo"></a>
                         </div>
@@ -124,7 +124,27 @@
 
                                         </div>
                                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                            
+                                            <h5>Choose an amount to give once</h5>
+                                            <div class="chs__btn">
+                                                <button>$45</button>
+                                                <button>$100</button>
+                                                <button>$250</button>
+                                                <button>$500</button>
+                                            </div>
+                                            <div class="chs__input">
+                                                <label for="price">$</label>
+                                                <input type="text" name="price" placeholder="or another amount">
+                                            </div>
+                                            <div class="chs__select">
+                                                <p>Donate To</p>
+                                                <select name="choose" id="choose">
+                                                    <option value="Select an option" selected>Select an option</option>
+                                                    <option value="Option 1">Option 1</option>
+                                                    <option value="Option 2">Option 2</option>
+                                                    <option value="Option 3">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <button class="button">Continue</button>
                                         </div>
                                     </div>
                                 </div>
