@@ -75,7 +75,7 @@
             <div class="container">
                 <div class="banner__inner">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="banner__content text-white">
                                 <h1>Invitation</h1>
                                 <p>Our community of sponsors has invested over $1m in our efforts since 2018. 
@@ -84,11 +84,49 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="banner__form">
                                 <div class="form__title d-flex flex-column justify-content-center align-items-center">
                                     <img src="assets/image/logo/formLogo.png" alt="logo">
                                     <span>Make an Investment</span>
+                                </div>
+                                <div class="card p-3 shadow" style="max-width: 600px;">
+                                    <h2 class="text-center p-3">Card with Tabs</h2>
+                                    <nav>
+                                        <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content p-3 border bg-light" id="nav-tabContent">
+                                        <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                            <h5>Choose an amount to give once</h5>
+                                            <div class="chs__btn">
+                                                <button>$45</button>
+                                                <button>$100</button>
+                                                <button>$250</button>
+                                                <button>$500</button>
+                                            </div>
+                                            <div class="chs__input">
+                                                <label for="price">$</label>
+                                                <input type="text" name="price" placeholder="or another amount">
+                                            </div>
+                                            <div class="chs__select">
+                                                <p>Donate To</p>
+                                                <select name="choose" id="choose">
+                                                    <option value="Select an option" selected>Select an option</option>
+                                                    <option value="Option 1">Option 1</option>
+                                                    <option value="Option 2">Option 2</option>
+                                                    <option value="Option 3">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <button class="button">Continue</button>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -99,13 +137,12 @@
     </section>
     <!-- hero section end here -->
 
-
     <!-- contact section start here -->
     <section class="contact__section">
         <div class="container">
             <div class="contact__inner">
                 <div class="contact__info">
-                    <div class="row">
+                    <div class="row align-items-lg-center">
                         <div class="col-lg-6">
                             <div class="office__title">
                                 <h2>Contact Us</h2>
@@ -118,57 +155,134 @@
                         </div>
                     </div> 
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="loc__office">
-                                <div class="office__info">
-                                    <h5>Home Office</h5>
-                                    <div class="info align-items-start">
-                                        <img src="assets/image/icon/location.png" alt="icon">
-                                        <a href="#!">1.1.10 NiyiOloyede St <br>
-                                            Alakia, Off New Ife Road Ibadan, Oyo State,
-                                            Nigeria
-                                        </a>
-                                    </div>
-                                    <div class="info align-items-start">
-                                        <img src="assets/image/icon/call.png" alt="icon">
-                                        <a href="tel:+2347041719082">+234 7041719082 </a>
-                                    </div>
-                                    <div class="info align-items-start">
-                                        <img src="assets/image/icon/mail.png" alt="icon">
-                                        <a href="mailto:inquiries@thequestschools.org">inquiries@thequestschools.org </a>
-                                    </div>
+                        <div class="col-sm-6">
+                            <div class="office__info">
+                                <h5>Home Office</h5>
+                                <div class="info align-items-start">
+                                    <img src="assets/image/icon/location.png" alt="icon">
+                                    <a href="#!">1.1.10 NiyiOloyede St <br>
+                                        Alakia, Off New Ife Road Ibadan, Oyo State,
+                                        Nigeria
+                                    </a>
+                                </div>
+                                <div class="info align-items-start">
+                                    <img src="assets/image/icon/call.png" alt="icon">
+                                    <a href="tel:+2347041719082">+234 7041719082 </a>
+                                </div>
+                                <div class="info align-items-start mb-0">
+                                    <img src="assets/image/icon/mail.png" alt="icon">
+                                    <a href="mailto:info@gmail.com">info@gmail.com</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="loc__office">
-                                <div class="office__info">
-                                    <h5>Field Office</h5>
-                                    <div class="info align-items-start">
-                                        <img src="assets/image/icon/location.png" alt="icon">
-                                        <a href="#!">1.1.10 NiyiOloyede St <br>
-                                            Alakia, Off New Ife Road Ibadan, Oyo State,
-                                            Nigeria
-                                        </a>
-                                    </div>
-                                    <div class="info align-items-start">
-                                        <img src="assets/image/icon/call.png" alt="icon">
-                                        <a href="tel:+2347041719082">+234 7041719082 </a>
-                                    </div>
-                                    <div class="info align-items-start">
-                                        <img src="assets/image/icon/mail.png" alt="icon">
-                                        <a href="mailto:inquiries@thequestschools.org">inquiries@thequestschools.org </a>
-                                    </div>
+                        <div class="col-sm-6">   
+                            <div class="office__info mb-0">
+                                <h5>Field Office</h5>
+                                <div class="info align-items-start">
+                                    <img src="assets/image/icon/location.png" alt="icon">
+                                    <a href="#!">1.1.10 NiyiOloyede St <br>
+                                        Alakia, Off New Ife Road Ibadan, Oyo State,
+                                        Nigeria
+                                    </a>
+                                </div>
+                                <div class="info align-items-start">
+                                    <img src="assets/image/icon/call.png" alt="icon">
+                                    <a href="tel:+2347041719082">+234 7041719082 </a>
+                                </div>
+                                <div class="info align-items-start mb-0">
+                                    <img src="assets/image/icon/mail.png" alt="icon">
+                                    <a href="mailto:info@gmail.com">info@gmail.com </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="contact__form">
+                    <h4>Get in touch</h4>
+                    <form>
+                        <div class="contact__top">
+                            <div class="inner__label">
+                                <label for="name">First Name</label>
+                                <input type="text" name="name" />
+                            </div>
+                            <div class="inner__label">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" />
+                            </div>
+                            <div class="inner__label">
+                                <label for="LastName">Last Name</label>
+                                <input class=" mb-0" type="text" name="LastName" />
+                            </div>
+                        </div>
+                        <div class="inner__label text-label">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5"></textarea>
+                        </div>
+                        <button class="button d-block w-100">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
     <!-- contact section end here -->
 
+    <!-- news letter section start here -->
+    <section class="news__letter">
+        <div class="container">
+            <div class="news__inner">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="news__content">
+                            <h2>Subscribe to our newsletter</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="news__contact">
+                            <form>
+                                <div class="news__top">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="emails" id="emails">
+                                </div>
+                                <button type="submit" class="button">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news letter section end here -->
+
+    <!-- footer section start here -->
+    <section class="footer__section">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top d-flex flex-column justify-content-center">
+                    <a href="#!" class="text-center"><img src="assets/image/logo/logoSolid.png" alt="logo"></a>
+                    <ul class="d-flex justify-content-center align-items-center">
+                        <li><a href="#!"><img src="assets/image/icon/facebook.png" alt="icon"></a></li>
+                        <li><a href="#!"><img src="assets/image/icon/twitter.png" alt=""></a></li>
+                        <li><a href="#!"><img src="assets/image/icon/insta.png" alt="icon"></a></li>
+                        <li><a href="#!"><img src="assets/image/icon/linkedin.png" alt="icon"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__bottom d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <ul class="d-flex align-items-center">
+                        <li><a href="#!">Introduction</a></li>
+                        <li><a href="#!">Insight</a></li>
+                        <li><a href="#!">Initiatives</a></li>
+                        <li><a href="#!">Inelligentsia</a></li>
+                        <li><a href="#!">Inquiries</a></li>
+                    </ul>
+                    <div class="footer__btn">
+                        <button class="button">ADMISSIONS</button>
+                        <button class="button">CAREERS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section end here -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
