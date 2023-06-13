@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{width: 100%; max-width: 1250px;}
+
+/* ======menu section css start here===== */
+.menu__section{
+    padding: 10px 0;
+    box-shadow: 0 3px 12px rgba(36, 50, 66, .08);
+
+}
+
+.menu__inner{
+    position: relative;
+    z-index: 9;
+}
+
+.menu__left{
+    gap: 32px;
+}
+
+.menu__left a img{
+    width: 100%;
+    max-width: 200px;
+}
+
+.menu__left ul{
+    gap: 20px;
+}
+
+.menu__left ul li a{
+    color: #959595;
+    position: relative;
+}
+
+.menu__left > ul > li a.menu__list::after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background: skyblue;
+    left: 0;
+    bottom: -22px;
+    transition: 0.1s ease-in-out;
+}
+
+.menu__left ul > li:hover a.menu__list::after{
+    height: 4px;
+    background: rgb(4, 157, 217);
+}
+
+.mega__menu{
+    position: absolute;
+    left: 0;
+    top: 56px;
+    width: 100%;
+    padding: 40px 20px 20px;
+    background-color: #fff;
+    box-shadow: 35px 35px 50px rgba(36, 50, 66, .15);
+    z-index: 999;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mega__show{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega__menu ul li:first-child{
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid #959595;
+}
+
+.mega__menu ul li{
+    font-size: 15px;
+    padding-bottom: 18px;
+    line-height: 28px;
+}
+
+.mega__menu ul li a{
+    color: #151b26;
+    transition: 0.3s ease-in-out    ;
+}
+
+.mega__menu ul li a:hover{
+    color: #959595;
+}
+
+.mega__menu ul{
+    margin-bottom: 40px;
+}
+
+.menu__right a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.menu__right span{
+    font-size: 20px;
+    color: #959595;
+}
+/* ======menu section css end here===== */
