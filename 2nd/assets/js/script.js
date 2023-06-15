@@ -3,7 +3,7 @@ const megaMenu = document.querySelector('.mega__menu')
 const menuList = document.querySelectorAll(".menu__list")
 
 menuList.forEach((menul)=>{
-    menul.addEventListener('click', ()=>{
+    menul.addEventListener('click', (event)=>{
         megaMenu.classList.toggle('mega__show')
         event.stopPropagation();
     })
@@ -15,3 +15,10 @@ document.addEventListener('click', (event) => {
       megaMenu.classList.remove('mega__show');
     }
   });
+
+const mbMenu = document.querySelector('.mb__menu')
+const menuBar = document.getElementById('menu__bar')
+
+  menubar.addEventListener('click', ()=> {
+  console.log('Lcl')
+})  
