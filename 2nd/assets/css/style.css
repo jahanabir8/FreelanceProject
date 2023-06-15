@@ -27,23 +27,30 @@ a{
 .container{width: 100%; max-width: 1270px;}
 
 /* ======menu section css start here===== */
+.additional{
+    position: relative;
+    background: #ffffff;
+    z-index: 99;
+}
+
 .menu__section{
     padding: 10px 0;
     box-shadow: 0 3px 12px rgba(36, 50, 66, .08);
     /* position: absolute; */
     /* width: 100%; */
-    position: relative;
-    z-index: 999;
+    /* position: relative; */
+    /* z-index: 999; */
     background-color: #fff;
 }
 
 .menu__inner{
-    position: relative;
-    z-index: 9;
+    /* position: relative;
+    z-index: 9; */
 }
 
 .menu__left{
     gap: 32px;
+    /* padding: 10px 0; */
 }
 
 .menu__left a img{
@@ -79,7 +86,7 @@ a{
 .mega__menu{
     position: absolute;
     left: 0;
-    top: 56px;
+    top: 65px;
     width: 100%;
     padding: 40px 20px 20px;
     background-color: #fff;
@@ -94,8 +101,9 @@ a{
 
 .mega__show{
     transform: translateY(0px);
-    opacity: 1;
+    opacity: 1; 
     visibility: visible;
+    z-index: -9;
 }
 
 .mega__menu ul li:first-child{
@@ -194,7 +202,7 @@ li.main__list > ul > li{
 
 @media screen and (max-width: 575px) {
     .mobile__menu{
-        max-width: 100%;
+        width: 100%;
     }
 }
 /* ======menu section css end here===== */
@@ -263,15 +271,6 @@ li.main__list > ul > li{
     max-height: 500px;
 }
 
-@media screen and (max-width: 767px) {
-    .banner__left{
-        margin-bottom: 20px;
-    }
-
-    .banner__left h1{
-        font-size: 24px;
-    }
-}
 
 .client__img img{
     width: 100%;
@@ -295,7 +294,23 @@ li.main__list > ul > li{
     .banner__section{
         padding-bottom: 60px;
     }
+
+    .banner__left button{
+        width: 210px;
+    }
 }
+
+@media screen and (max-width: 767px) {
+    .banner__left{
+        margin-bottom: 20px;
+    }
+
+    .banner__left h1{
+        font-size: 24px;
+    }
+}
+
+
 
 /* =====banner section css end here===== */
 
@@ -403,11 +418,16 @@ li.main__list > ul > li{
 
 
 /* =====footer section css start here===== */
+.footer__section{
+    border-top: 1px solid #eee;
+}
+
 .footer__inner{
     padding: 130px 0 10px;
     display: grid;
     gap: 30px;
     grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #eee;
 }
 
 .footer__box img{
@@ -460,6 +480,21 @@ li.main__list > ul > li{
 .footer__box ul li a{
     color: #111111;
     opacity: 0.7;
+}
+
+.copyright__inner{  
+    padding: 32px 0;
+}
+
+.copyright p{
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 14px;
+}
+
+.copyright span{
+    font-size: 14px;
+    line-height: 28px;
 }
 
 @media screen and (max-width: 991px) {
