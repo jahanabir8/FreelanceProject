@@ -30,8 +30,9 @@ a{
 .menu__section{
     padding: 10px 0;
     box-shadow: 0 3px 12px rgba(36, 50, 66, .08);
-    position: absolute;
-    width: 100%;
+    /* position: absolute; */
+    /* width: 100%; */
+    position: relative;
     z-index: 999;
     background-color: #fff;
 }
@@ -144,7 +145,13 @@ a{
     left: 0;
     top: 0;
     z-index: 999;
-    display: none;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+}
+
+.mobile__show{
+    transform: translateX(0);
+    transition: 0.3s ease-in-out;
 }
 
 .mobile__menu > ul > li.main__list{
@@ -184,6 +191,7 @@ li.main__list > ul > li{
     padding: 20px 0;
 }
 
+
 @media screen and (max-width: 575px) {
     .mobile__menu{
         max-width: 100%;
@@ -195,7 +203,7 @@ li.main__list > ul > li{
 /* =====banner section css start here===== */
 .banner__section{
     position: relative;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 
 .banner__inner{

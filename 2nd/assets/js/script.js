@@ -10,12 +10,21 @@ menuList.forEach((menul)=>{
 })
 
 
-// const mbMenu = document.querySelector('.mobile__menu')
-// const menuBar = document.getElementById('menu__bar')
+const mbMenu = document.querySelector('.mobile__menu')
+const menuBar = document.querySelector('.menu__bar')
+const crossBar = document.querySelector('.cross__bar')
 
-// menubar.addEventListener('click', () =>{
-//   mbMenu.classList.toggle("d-block")
-// })  
+menuBar.addEventListener("click", function(){
+  mbMenu.classList.toggle("mobile__show")
+})
+
+crossBar.addEventListener("click", function (){
+  mbMenu.classList.remove('mobile__show')
+}
+)
+// 
+
+
 
 document.addEventListener('click', (event) => {
     const menuArray = Array.from(menuList); // Convert NodeList to an array
