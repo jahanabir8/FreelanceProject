@@ -30,7 +30,10 @@ a{
 .menu__section{
     padding: 10px 0;
     box-shadow: 0 3px 12px rgba(36, 50, 66, .08);
-
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
 }
 
 .menu__inner{
@@ -85,6 +88,7 @@ a{
     transition: 0.3s ease-in-out;
     opacity: 0;
     visibility: hidden;
+    z-index: -1;
 }
 
 .mega__show{
@@ -191,6 +195,7 @@ li.main__list > ul > li{
 /* =====banner section css start here===== */
 .banner__section{
     position: relative;
+    padding-top: 80px;
 }
 
 .banner__inner{
@@ -220,7 +225,7 @@ li.main__list > ul > li{
     width: 210px;
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     padding: 8px 0px 8px 10px;
     font-size: 16px;
     font-weight: 400;
@@ -276,7 +281,11 @@ li.main__list > ul > li{
 
 @media screen and (max-width: 991px) {
     .client__img{
-        bottom: -5px;
+        bottom: 0;
+    }
+
+    .banner__section{
+        padding-bottom: 60px;
     }
 }
 
