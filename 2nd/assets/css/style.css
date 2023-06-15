@@ -179,6 +179,12 @@ ul.sub__list li:first-child{
 li.main__list > ul > li{
     padding: 20px 0;
 }
+
+@media screen and (max-width: 575px) {
+    .mobile__menu{
+        max-width: 100%;
+    }
+}
 /* ======menu section css end here===== */
 
 
