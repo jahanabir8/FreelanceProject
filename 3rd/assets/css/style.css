@@ -115,6 +115,15 @@ a.cmn__btn:hover{
     margin-left: auto;
 }
 
+/* .mobile__menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+} */
+
 @media screen and (max-width: 991px) {
 
     .hero__banner{
@@ -371,6 +380,100 @@ a.cmn__btn:hover{
     }
 }
 /* =====service section css end here===== */
+
+/* =====footprint section start here===== */
+.footprint__section .map__sec{
+    margin-bottom: 70px;
+}
+
+.intro__vid, .mb__app{
+    margin-bottom: 70px;
+}
+
+.vid__content h2{
+    margin: 10px 0;
+    line-height: 38px;
+}
+
+.vid__content p{
+    color: #757575;
+    font-weight: 500;
+}
+
+.app__content{
+    width: 100%;
+    max-width: 384px;
+}
+
+.app__content h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.app__content p{
+    color: #757575;
+    line-height: 28px;
+}
+
+.app__content .our__apps{
+    margin-top: 15px;
+    display: flex;
+    gap: 24px;
+}
+
+.app__content .our__apps img{
+    width: 156px;   
+}
+
+.join__sec{
+    padding: 64px 17px;
+    background-image: url(../image/bg/footstep.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-bottom: 70px;
+}
+
+.join__sec .join__inn{
+    width: 100%;
+    max-width: 790px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.join__sec .join__inn h4{
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .intro__vid .row{
+        flex-direction: column-reverse;
+    }
+
+    .vid__content{
+        margin-bottom: 35px;
+    }
+
+    .mb__app .row{
+        flex-direction: column-reverse;
+    }
+
+    .app__img img{
+        margin-bottom: 35px;
+    }
+
+    .join__sec .join__inn h4{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+
+/* =====footprint section start here===== */
 
 /* =====footer section css start here===== */
 .footer__section{
