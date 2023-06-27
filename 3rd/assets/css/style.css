@@ -58,6 +58,8 @@ a.cmn__btn{
 
 a.cmn__btn:hover{
     opacity: 0.8;
+    /* padding: 5px 15px;
+    font-size: 14px; */
 }
 
 @media screen and (max-width: 575px) {
@@ -450,6 +452,15 @@ a.cmn__btn:hover{
 }
 
 @media screen and (max-width: 767px) {
+
+    .footprint__inner h5{
+        font-size: 20px;
+    }
+
+    .footer__inner h2{
+        font-size: 24px;
+    }
+
     .intro__vid .row{
         flex-direction: column-reverse;
     }
