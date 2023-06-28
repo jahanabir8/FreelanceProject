@@ -26,6 +26,10 @@ h5.subTitle{ font-size: 24px; color: #FF5940; font-weight: 500;}
     h2.Title{
         font-size: 20px;
     }
+
+    h5.subTitle{
+        font-size: 16px;
+    }
 }
 
 p{font-size: 16px;}
@@ -136,13 +140,15 @@ a.cmn__btn:hover{
         margin-bottom: 66px;
     }
 
-    .hero__content h1{
-        font-size: 24px;
-    }
-
     .hero__content p{
         font-size: 14px;
         line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero__content h1{
+        font-size: 24px;
     }
 }
 /* =====hero section css end here===== */
@@ -161,12 +167,20 @@ a.cmn__btn:hover{
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    justify-content: center;
 }
 
 .partner__inner .partners img{
     width: 100%;
     max-width: 174px;
+}
+
+@media screen and (max-width: 1199px) {
+    .partner__section .container{
+        max-width: 810px;
+        margin: auto;
+    }
+
+
 }
 
 @media screen and (max-width: 991px) {
@@ -296,10 +310,24 @@ a.cmn__btn:hover{
     font-weight: 500;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
+    .achievement__section .container{
+        max-width: 560px;
+    }
+
     .achievement__boxes{
         flex-wrap: wrap;
     }
+}
+
+@media screen and (max-width: 1023px) {
+    .achievement__boxes{
+        flex-wrap: wrap;
+    }.ac__box h2{
+        line-height: 38px;
+    }
+
+
 }
 
 @media screen and (max-width: 575px) {
@@ -309,6 +337,12 @@ a.cmn__btn:hover{
 
     .ac__box p{
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .ac__box{
+        width: 132px;
     }
 }
 /* =====achievement section css end here===== */
@@ -366,11 +400,6 @@ a.cmn__btn:hover{
     .service__content{
         margin-bottom: 35px;
         max-width: 100%;
-        text-align: center;
-    }
-
-    .service__content p{
-        text-align: center;
     }
 
     .service__content p{
@@ -379,6 +408,12 @@ a.cmn__btn:hover{
 
     .service__box.nth-2 .row{
         flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .feature__inner h2{
+        font-size: 20px;
     }
 }
 /* =====service section css end here===== */
@@ -483,6 +518,46 @@ a.cmn__btn:hover{
     }
 }
 
+@media screen and (max-width: 575px) {
+    .app__content .our__apps img{
+        max-width: 130px;
+    }
+
+    .footprint__inner h5{
+        font-size: 14px;
+    }
+
+    .footprint__inner h2{
+        font-size: 20px;
+    }
+
+    .vid__content h2{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .vid__content p{
+        font-size: 14px;
+    }
+
+    .app__content h4{
+        font-size: 20px;
+    }
+
+    .app__content p{
+        font-size: 14px;
+    }
+
+    .join__sec{
+        padding: 36px 17px;
+        margin-bottom: 35px 0;
+    }
+
+    .join__sec .join__inn h4{
+        font-size: 14px;
+    }
+}
+
 
 /* =====footprint section start here===== */
 
@@ -547,7 +622,6 @@ a.cmn__btn:hover{
 .footer__section .copy{
     padding: 32px 0;
     border-top: 1px solid rgba(122, 117, 117, 0.40);
-    ;
 }
 
 .footer__section .copy p, .footer__section .copy a{
@@ -570,8 +644,14 @@ a.cmn__btn:hover{
     }
 
     .footer__section .copy{
-        text-align: center;
+        flex-direction: column;
+        gap: 20px;
     }
+}
 
+@media screen and (max-width: 575px) {
+    .footer__inner{
+        padding: 35px 0;
+    }
 }
 /* =====footer section end start here===== */
