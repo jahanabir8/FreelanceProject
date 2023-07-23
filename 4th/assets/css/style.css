@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #141414;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+
+h1{font-size: 50px;}
+h2{font-size: 30px;}
+h3{font-size: 25px;}
+
+
+/* =====page section css start here ===== */
+.page__section{
+    padding: 29px 28px 28px;
+}
+
+.page__inner{
+    gap: 20px;
+}
+
+/* sidebar css */
+.sidebar{
+    width: 100%;
+    max-width: 275px;
+    gap: 20px;
+    position: sticky;
+    top: 29px;
+}
+
+.sidebar .navi ul{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+
+    padding: 22px 25px;
+    background: #EEF0F20D;
+    border-radius: 10px;
+}
+
+.sidebar .navi ul li a{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    width: 100%;
+    font-size: 17px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.sidebar .navi ul li:last-child a{
+    color: #EEF0F2B2;
+}
+
+.sideProfile{
+    background: #EEF0F20D;
+    padding: 15px 25px 16px 15px;
+    border-radius: 10px;
+}
+
+.sideProfile a.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+}
+
+.sideProfile a.profile h5 {
+    font-size: 14px;
+}
+
+.sideProfile a.profile p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.sideProfile a.profile img{
+    width: 55px;
+    height: 55px;
+}
+
+.sidebar__playlist{
+    background: #EEF0F20D;
+    padding: 18px 25px 25px;
+    border-radius: 10px;
+}
+
+.sidebar__playlist h4{
+    font-size: 17px;
+    color: #EEF0F2;
+    line-height: 23px;
+    margin-bottom: 23px;
+}
+
+.sidebar__playlist .playlist a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.sidebar__playlist .playlist a .play__box {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.sidebar__playlist .playlist:first-child a .play__box{
+    background: #209045;
+}
+
+.sidebar__playlist .playlist:last-child a .play__box{
+    background: #EEF0F21A;
+}
+
+.sidebar__playlist .playlist a .play__box img {
+    width: 20px;
+}
+
+.sidebar__playlist .playlist h5 {
+    font-size: 14px;
+    color: #EEF0F2;
+    line-height: 18px;
+}
+
+.sidebar__playlist .playlist p{
+    font-size: 12px;
+    line-height: 16px;
+    color: #EEF0F2B2;
+}
+
+
+/* bm__boxes css */
+.bm__boxes{
+    padding: 24px 30px;
+    background: #1F1F1F;
+    border-radius: 10px;
+}
+
+.bm__boxes h3{
+    margin-bottom: 27px;
+    color: #EEF0F2;
+    font-weight: 700;
+}
+
+.bm__boxes .bm__box__sec{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-bottom: 60px;
+}
+
+.bm__boxes .bm__box__sec:last-child{
+    margin-bottom: 0;
+}
+
+.bm__boxes .bm__box__sec .box{
+    padding: 18px;
+    background: #EEF0F20D;
+    border-radius: 10px;
+    color: #EEF0F2;
+}
+
+.bm__boxes .bm__box__sec .box__img{
+    margin-bottom: 21px;
+}
+
+.bm__boxes .box__content h4{
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 4px;
+}
+
+.bm__boxes .box__content p{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/* =====page section css start here ===== */
+
