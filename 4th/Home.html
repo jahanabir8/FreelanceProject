@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMRUSH</title>
+    <title>Home</title>
 
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,9 +17,9 @@
 <body>
 
     <!-- page section start here -->
-    <div class="page__section">
+    <section class="page__section">
         <div class="page__inner d-flex">
-            <div class="sidebar d-flex flex-column">
+            <div class="sidebar d-flex flex-column" id="sidebar">
                 <div class="navi w-100">
                     <ul class="w-100">
                         <li><a href="#!"><img src="assets/image/icon/home.png" alt="icon"> Home</a></li>
@@ -143,6 +143,7 @@
                             </div>
                         </div>
                     </div>
+                    <h3>Best Songs of the Month</h3>
                     <div class="bm__box__sec">
                         <div class="box">
                             <div class="box__img">
@@ -205,6 +206,7 @@
                             </div>
                         </div>
                     </div>
+                    <h3>Best Songs of the Month</h3>
                     <div class="bm__box__sec">
                         <div class="box">
                             <div class="box__img">
@@ -270,8 +272,20 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- page section end here -->
+
+    <!-- bottom nav start here -->
+    <div class="bottom__nav">
+        <div class="navi w-100">
+            <ul class="w-100 p-0 justify-content-between flex-row align-items-center" style="background: unset;">
+                <li><a class="d-flex flex-column" href="#!"><img src="assets/image/icon/home.png" alt="icon"> Home</a></li>
+                <li><a class="d-flex flex-column" href="#!"><img src="assets/image/icon/searchUnactive.png" alt="icon"> Search</a></li>
+                <li><a class="d-flex flex-column" id="libBtn" href="#!"><img src="assets/image/icon/library.png" alt="icon"> Library</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- bottom nav end here -->
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>

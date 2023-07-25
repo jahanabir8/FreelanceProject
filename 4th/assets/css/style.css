@@ -1,35 +1,64 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+::-webkit-scrollbar {
+    display: none;
+ }
+
+body {
     background: #141414;
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
 }
-a{text-decoration: none;}
-li{list-style: none;}
-h1, h2, h3, h4, h5, h6, p{margin: 0;}
 
-h1{font-size: 50px;}
-h2{font-size: 30px;}
-h3{font-size: 25px;}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
 
 
 /* =====page section css start here ===== */
-.page__section{
+.page__section {
     padding: 29px 28px 28px;
 }
 
-.page__inner{
+.page__inner {
     gap: 20px;
 }
 
 /* sidebar css */
-.sidebar{
+.sidebar {
     width: 100%;
     max-width: 275px;
     gap: 20px;
@@ -37,7 +66,7 @@ h3{font-size: 25px;}
     top: 29px;
 }
 
-.sidebar .navi ul{
+.navi ul {
     display: flex;
     flex-direction: column;
     gap: 33px;
@@ -47,7 +76,7 @@ h3{font-size: 25px;}
     border-radius: 10px;
 }
 
-.sidebar .navi ul li a{
+.navi ul li a {
     display: flex;
     gap: 11px;
     align-items: center;
@@ -58,11 +87,12 @@ h3{font-size: 25px;}
     font-weight: 600;
 }
 
-.sidebar .navi ul li:last-child a{
+.navi ul li:last-child a,
+.navi ul li:nth-child(2) a {
     color: #EEF0F2B2;
 }
 
-.sideProfile{
+.sideProfile {
     background: #EEF0F20D;
     padding: 15px 25px 16px 15px;
     border-radius: 10px;
@@ -84,18 +114,18 @@ h3{font-size: 25px;}
     line-height: 20px;
 }
 
-.sideProfile a.profile img{
+.sideProfile a.profile img {
     width: 55px;
     height: 55px;
 }
 
-.sidebar__playlist{
+.sidebar__playlist {
     background: #EEF0F20D;
     padding: 18px 25px 25px;
     border-radius: 10px;
 }
 
-.sidebar__playlist h4{
+.sidebar__playlist h4 {
     font-size: 17px;
     color: #EEF0F2;
     line-height: 23px;
@@ -117,11 +147,11 @@ h3{font-size: 25px;}
     border-radius: 5px;
 }
 
-.sidebar__playlist .playlist:first-child a .play__box{
+.sidebar__playlist .playlist:first-child a .play__box {
     background: #209045;
 }
 
-.sidebar__playlist .playlist:last-child a .play__box{
+.sidebar__playlist .playlist:last-child a .play__box {
     background: #EEF0F21A;
 }
 
@@ -135,7 +165,7 @@ h3{font-size: 25px;}
     line-height: 18px;
 }
 
-.sidebar__playlist .playlist p{
+.sidebar__playlist .playlist p {
     font-size: 12px;
     line-height: 16px;
     color: #EEF0F2B2;
@@ -143,50 +173,538 @@ h3{font-size: 25px;}
 
 
 /* bm__boxes css */
-.bm__boxes{
+.bm__boxes {
     padding: 24px 30px;
     background: #1F1F1F;
     border-radius: 10px;
 }
 
-.bm__boxes h3{
+.bm__boxes h3 {
     margin-bottom: 27px;
     color: #EEF0F2;
     font-weight: 700;
 }
 
-.bm__boxes .bm__box__sec{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.bm__boxes .bm__box__sec {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
     gap: 18px;
     margin-bottom: 60px;
+    justify-content: space-evenly;
 }
 
-.bm__boxes .bm__box__sec:last-child{
+.bm__boxes .bm__box__sec:last-child {
     margin-bottom: 0;
 }
 
-.bm__boxes .bm__box__sec .box{
+.bm__boxes .bm__box__sec .box {
     padding: 18px;
     background: #EEF0F20D;
     border-radius: 10px;
     color: #EEF0F2;
 }
 
-.bm__boxes .bm__box__sec .box__img{
+.bm__boxes .bm__box__sec .box__img {
     margin-bottom: 21px;
 }
 
-.bm__boxes .box__content h4{
+.bm__boxes .box__content h4 {
     font-size: 17px;
     line-height: 23px;
     margin-bottom: 4px;
 }
 
-.bm__boxes .box__content p{
+.bm__boxes .box__content p {
     font-size: 14px;
     line-height: 19px;
 }
 
-/* =====page section css start here ===== */
+/* user section css */
+.user__sec {
+    padding: 24px 30px;
+    background: #1F1F1F;
+    border-radius: 10px;
+    color: #EEF0F2;
+}
 
+.user__sec .pg__info a {
+    font-size: 20px;
+    color: rgba(238, 240, 242, 0.70);
+}
+
+.user__profile {
+    gap: 26px;
+    margin: 87px 0 92px;
+}
+
+.user__profile .user__img {
+    height: 148px;
+    width: 148px;
+}
+
+.user__profile .user__content h1 {
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.user__playlist h3 {
+    margin-bottom: 27px;
+}
+
+.user__playBox {
+    gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.user__playBox .play__box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.user__playBox .play__box {
+    padding: 22px;
+    border-radius: 10px;
+    background: rgba(238, 240, 242, 0.05);
+}
+
+.user__playBox .play__box .play__content h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+
+.user__playBox .play__box .play__content {
+    margin-top: 20px;
+}
+
+.user__playBox .play__box .play__content p {
+    font-size: 14px;
+}
+
+.bottom__nav {
+    padding: 21px 52px;
+    background: #000;
+    position: sticky;
+    bottom: 0;
+    display: none;
+}
+
+.bottom__nav ul li a img {
+    height: 17px;
+}
+
+@media screen and (max-width: 813px) {
+    .page__section {
+        padding: 0;
+    }
+
+    .bm__boxes {
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .bm__boxes .bm__box__sec {
+        justify-content: unset;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bm__boxes .bm__box__sec .box {
+        width: 100%;
+        display: flex;
+        gap: 18px;
+    }
+
+    .bm__boxes .bm__box__sec .box__img {
+        margin-bottom: 0;
+    }
+
+    .bm__boxes .bm__box__sec .box__content {
+        width: 100%;
+    }
+
+    .bm__boxes .bm__box__sec .box__img img {
+        height: 57px !important;
+        width: 55px !important;
+    }
+
+    .bottom__nav {
+        display: block;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .sidebar__show {
+        display: flex !important;
+
+        position: absolute;
+        width: 100%;
+        max-width: unset;
+        background: #1F1F1F;
+        top: 0;
+        left: 0;
+        padding: 12px;
+    }
+
+    .sidebar .navi {
+        display: none;
+    }
+
+    .user__playBox {
+        gap: 15px;
+    }
+
+    .user__playBox .play__box {
+        padding: 15px;
+    }
+
+    .user__playBox .play__box .play__content {
+        margin-top: 15px;
+    }
+
+    .user__playBox .play__box .play__content h5{
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 2px;
+    }
+
+    .user__playBox .play__box .play__content p{
+        font-size: 13px;
+    }
+
+    .user__sec{
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .user__playlist h3{
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .user__profile .user__content h1{
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .user__profile{
+        margin: 47px 0 69px;
+    }
+
+    .user__profile .user__img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .pg__info h3{
+        font-size: 20px;
+    }
+
+    .pg__info a{
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bm__boxes h3 {
+        margin-bottom: 22px;
+        font-size: 18px;
+    }
+
+    .bm__boxes .bm__box__sec {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .bm__boxes .bm__box__sec {
+        margin-bottom: 51px;
+    }
+}
+
+/* =====page section css end here ===== */
+
+/* =====Singinup page css start here===== */
+.sign__form{
+    padding: 83px 23px;
+}
+
+.sign__form form {
+    width: 100%;
+    max-width: 590px;
+    margin: auto;
+    padding: 62px 51px;
+    border-radius: 10px;
+    background: rgba(238, 240, 242, 0.05);
+}
+
+.sign__form form h3{
+    margin-bottom: 50px;
+}
+
+.sign__form form .name__block{
+    gap: 20px;
+}
+
+.sign__form form label{
+    margin-bottom: 12px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sign__form form input{
+    width: 100%;
+    padding: 18px 21px;
+    font-size: 16px;
+    color: #484949;
+    border-radius: 10px;
+    border: 2px solid rgba(238, 240, 242, 0.70);
+    outline: none;
+    background: #1F1F1F;
+    font-weight: 600;
+}
+
+.sign__form form .form__block{
+    margin-bottom: 37px;
+}
+
+.sign__form form .form__block:last-child{
+    margin-bottom: 67px;
+}
+
+.sign__form form .submitBtn{
+    width: 100%;
+    max-width: 140px;
+    margin: auto;
+    border-radius: 32.5px;
+    background: #209045;
+    border: 1px solid #209045;
+    color: #EEF0F2;
+    display: block;
+    margin: auto;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.sign__form form .login__opt{
+    gap: 5px;
+}
+
+.sign__form form .login__opt p{
+    font-size: 16px;
+    color: #EEF0F2;
+}
+
+.sign__form form .login__opt a{
+    color: #209045;
+    display: block;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    .sign__form{
+        padding: 43px 20px;
+    }
+
+    .sign__form form{
+        padding: 49px 25px;
+    }
+
+    .sign__form form h3{
+        margin-bottom: 61px;
+        font-size: 20px;
+    }
+
+    .sign__form form label{
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .sign__form form .name__block{
+        flex-direction: column;
+        gap: 38px;
+    }
+
+    .sign__form form .submitBtn {
+        font-size: 15px;
+        width: 122px;
+    }
+
+    .sign__form form .form__block{
+        margin-bottom: 23px;
+    }
+}
+/* =====Singinup page css end here===== */
+
+
+/* =====search page css start here===== */
+.search__box form{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    width: 100%;
+    max-width: 553px;
+    padding: 15px 20px;
+    border-radius: 43px;
+    border: 1px solid rgba(238, 240, 242, 0.70);
+    background: #343434;
+    margin-bottom: 30px;
+}
+
+.search__box form img{
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+}
+
+.search__box form input{
+    width: 100%;
+    outline: none;
+    background: #343434;
+    border: none;
+    color: #8B8C8E;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search__opt .nav{
+    border-bottom: none;
+    margin-bottom: 31px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+.search__opt .nav .nav-link{
+    color: #EEF0F2;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 21px;
+    border-radius: 40px;
+    background: #343434;
+    font-weight: 600;
+}
+
+.search__opt .nav .nav-link.active{
+    background: #EEF0F2;
+    color: #1F1F1F;
+}
+
+.search__opt .nav .nav-link.active:hover{
+    color: #1F1F1F;
+}
+
+.search__opt .nav .nav-link:hover{
+    border: 1px solid transparent;
+    color: #EEF0F2;
+}
+
+.search__nav{
+    /* width: 100%; */
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.modal-backdrop.fade.show{
+    display: none;
+}
+
+.modal.fade.show{
+    background: #000000d1;
+}
+
+.modal-content{
+    max-width: 350px;
+    margin: auto;
+    padding: 53px 54px 92px;
+    background: #000;
+    position: relative;
+}
+
+.modal-header{
+    padding: 0;
+    border-bottom: 0;
+    display: unset !important;
+}
+
+.modal-header button.close{
+    padding: 0;
+    /* font-size: 30px; */
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.modal-header button.close img{
+    height: 15px;
+    width: 15px;
+}
+
+h4.modal-title{
+    margin-bottom: 42px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-body{
+    padding: 0;
+    gap: 15px;
+}
+
+.modal-body .playlist__sel{
+    padding: 15px;
+    gap: 12px;
+    background: #0C0C0C;
+    border-radius: 10px;
+}
+
+.modal-body .playlist__sel img{
+    height: 55px;
+    width: 55px;
+}
+
+.modal-body .playlist__sel h4{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.modal-body .playlist__sel p{
+    font-size: 12px;
+}
+
+.modal-footer{
+    border-top: 0;
+    padding: 0;
+}
+
+.modal-footer button{
+    display: block;
+    margin: auto;
+    margin-top: 42px;
+    padding: 10px 32px;
+    border-radius: 43px;
+    background: #209045;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+    .search__page .bm__box__sec{
+        gap: 17px;
+        justify-content: unset;
+    }
+}
+/* =====search page css end here===== */
